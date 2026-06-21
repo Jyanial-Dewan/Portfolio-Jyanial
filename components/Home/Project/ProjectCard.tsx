@@ -46,7 +46,7 @@ const ProjectCard = ({
         <div className="flex flex-wrap mb-6 gap-2">
           {techStack.map((stack) => (
             <div key={stack} className="bg-indigo-600 px-2 rounded-full">
-              <p className="text-white">{stack}</p>
+              <p className="text-white md:text-sm">{stack}</p>
             </div>
           ))}
         </div>
@@ -63,8 +63,8 @@ const ProjectCard = ({
           )}
           {githubUrl && (
             <Button asChild size={"sm"} className="flex-1" variant={"outline"}>
-              <a href={githubUrl} target="_blanck" rel="noopener noreferrer">
-                <BsGithub className="w-4 h-4 mr-2" />
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                <BsGithub className="w-4 h-4" />
                 Github URL
               </a>
             </Button>
